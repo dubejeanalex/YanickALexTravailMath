@@ -56,7 +56,7 @@ namespace labo4_YanickLedoux_AlexDubeJean
             resultatTestArithmetique3 = nb2 - nb1;
 
             if (resultatTestGeometrique2 == resultatTestGeometrique1
-                && resultatTestGeometrique2 == resultatTestGeometrique1)
+                && resultatTestGeometrique2 == resultatTestGeometrique1) // Ici ce n'est pas la même chose pour les 2 lignes 
             {
                 raison = resultatTestGeometrique1;
                 termeGeneral = nb1 * (Math.Pow(raison, (rangDernierTerme - (nb1 / raison))));
