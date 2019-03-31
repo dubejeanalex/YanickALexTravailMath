@@ -76,7 +76,7 @@ namespace labo4_YanickLedoux_AlexDubeJean
                 Console.WriteLine("\nLe " + rangDernierTerme + "e terme de la suite est : " + termeGeneral);
 
                 Console.WriteLine("\nLa règle de récurence de la suite est : a_n = a_n-1 * " + raison + ", pour n>= 2, où a_1 = " + nb1);
-                Console.WriteLine("\nLe terme général de la suite est : a_n = " + nb1 + "(" + raison + "^n-" + (nb1 - raison) + ")");
+                Console.WriteLine("\nLe terme général de la suite est : a_n = " + nb1 + "(" + raison + "^n" + (nb1 - raison) + ")");
                 Console.WriteLine("\nLa somme des " + rangDernierTerme + " premiers termes de la suite est : " + sommeDeLaSuite);
             }
 
