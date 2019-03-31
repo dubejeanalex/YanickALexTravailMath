@@ -56,17 +56,17 @@ namespace labo4_YanickLedoux_AlexDubeJean
             resultatTestArithmetique3 = nb2 - nb1;
 
             if (resultatTestGeometrique2 == resultatTestGeometrique1
-                && resultatTestGeometrique2 == resultatTestGeometrique1) // Ici ce n'est pas la même chose pour les 2 lignes 
+                && resultatTestGeometrique3 == resultatTestGeometrique1) // correction apportée à vérifier.
             {
-                raison = resultatTestGeometrique1;
-                termeGeneral = nb1 * (Math.Pow(raison, (rangDernierTerme - (nb1 / raison))));
-                sommeDeLaSuite = (nb1 * (Math.Pow(raison, rangDernierTerme) - 1)) / (raison - 1);
+                raison = resultatTestGeometrique1; // Le multiple entre les termes.
+                termeGeneral = nb1 * (Math.Pow(raison, (rangDernierTerme - 1)));
+                sommeDeLaSuite = (nb1 * (Math.Pow(raison, rangDernierTerme) - 1)) / (raison - 1); 
 
                 Console.Write("Les " + rangDernierTerme + " premiers termes de la suite sont {");
 
-                for (int i = 0; i < rangDernierTerme; i++)
+                for (int i = 0; i < rangDernierTerme; i++) // Boucle pour additionner tous les termes.
                 {
-                    double nbSuite = nb1 * Math.Pow(raison, i);
+                    double nbSuite = nb1 * Math.Pow(raison, i); 
                     Console.Write(nbSuite + " ; ");
                 }
                 Console.WriteLine("...}");
